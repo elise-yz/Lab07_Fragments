@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/fragment1_textview"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fragment1_button"/>
+
+    <Button
+        android:id="@+id/fragment1_button"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/fragment1_textview"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
