@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Lab07 Fragments</string>
-    <string name="greeting_textview">hello</string>
-    <string name="textview1_text">hello</string>
-    <string name="button1_text">replace fragment?</string>
+    <string name="greeting_textview">choose one</string>
+    <string name="left_button_text">left</string>
+    <string name="middle_button_text">middle</string>
+    <string name="right_button_text">right</string>
+    <string name="fragment1_button_text">remove?</string>
+    <string name="fragment1_button2_text">add?</string>
+    <string name="fragment3_textview_text">times hidden: %1$d</string>
+    <string name="fragment3_button_text">hide?</string>
+    <string name="fragment4_button_text">show?</string>
+    <string name="fragment5_text_initial">number of times visited: 0</string>
+    <string name="fragment5_text">number of times visited: %1$d</string>
 </resources>

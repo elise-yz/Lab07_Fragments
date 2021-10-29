@@ -2,19 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_gray"
+    android:background="@color/medium_gray"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Button
-        android:id="@+id/fragment1_button"
-        android:onClick="removeFragment1"
-        android:backgroundTint="@color/light_gray"
+        android:id="@+id/fragment3_button"
+        android:backgroundTint="@color/dark_gray"
+        android:onClick="hideFragment3"
         android:layout_width="100dp"
-        android:textColor="@color/dark_gray"
         android:layout_height="50dp"
-        android:text="@string/fragment1_button_text"
+        android:text="@string/fragment3_button_text"
         android:textAllCaps="false"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

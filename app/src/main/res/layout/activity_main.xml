@@ -10,11 +10,48 @@
         android:id="@+id/greeting_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/horizontal_guideline"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:text="@string/greeting_textview"/>
+
+    <Button
+        android:id="@+id/left_button"
+        android:onClick="showFragment1"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:textAllCaps="false"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:text="@string/left_button_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greeting_textview"
+        app:layout_constraintRight_toLeftOf="@id/middle_button"/>
+
+    <Button
+        android:id="@+id/middle_button"
+        android:onClick="addFragment3"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:textAllCaps="false"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:text="@string/middle_button_text"
+        app:layout_constraintLeft_toRightOf="@id/left_button"
+        app:layout_constraintTop_toBottomOf="@id/greeting_textview"
+        app:layout_constraintRight_toLeftOf="@id/right_button"/>
+
+    <Button
+        android:id="@+id/right_button"
+        android:onClick="showFragment5"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:textAllCaps="false"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:text="@string/right_button_text"
+        app:layout_constraintLeft_toRightOf="@id/middle_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greeting_textview"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/horizontal_guideline"
@@ -31,6 +68,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
